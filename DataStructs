@@ -1,0 +1,59 @@
+1) Element Connectivity
+numberNodesPerElement*numberElements
+[-----------------]
+[-----------------]
+[-----------------]
+
+2) shapeFunctionsAtQuadPoints = (numberNodesPerElement,numberQuadPoints)
+
+3) shapeFunctionDerivsAtQuadPoints = (numberNodesPerElement*numberQuadPoints)
+[----]
+[----]
+[----]
+
+
+4) jacobianQuadPointValues = (1,numberQuadraturePoints*numberElements)
+
+5) invJacobianQuadPointValues = (1,numberQuadraturePoints*numberElements)
+
+6) positionQuadPointValues = (1,numberQuadraturePoints*numberElements)
+
+7) weightQuadPointValues = (1,numberQuadraturePoints*numberElements)
+[------------------------------------------------]
+
+
+8) psiQuadValues = (3*numElectrons,numberElements*numberQuadraturePoints)
+   DPsiQuadValues =(3*numElectrons,numberElements*numberQuadraturePoints)
+
+[-------------------------------------------------------------]
+[-------------------------------------------------------------]
+[-------------------------------------------------------------]
+
+9) vx = (1,numberElements*numberQuadPoints)
+[-------------------------------------------------------------]
+
+10) Fx = (1,numberNodes)
+
+11) X0 = (numberNodesPerElement,numberQuadraturePoints*numberElements)
+
+12) nodalFields, umat, vmat and wmat are column oriented
+
+13)eigenVx = (numberNodes,numberEigenVectors)
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
+
+14) basisX  = (numberNodes,numberEigenVectors)
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
+[------]
